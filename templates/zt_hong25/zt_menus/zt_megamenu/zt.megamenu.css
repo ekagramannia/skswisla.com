@@ -1,0 +1,74 @@
+/* ------------------------------------------------------------------------
+* Copyright (c) 2008-2011 ZooTemplate. All Rights Reserved.
+* @license - Copyrighted Commercial Software
+* Author: ZooTemplate
+* Websites:  http://www.zootemplate.com
+-------------------------------------------------------------------------*/
+
+div.menusys_mega {width: 100%;float:left;display:block; min-height:40px; }
+
+/* Level 0 */
+div.menusys_mega ul.level0 {width:100%;margin:0;padding:0;float: left;list-style: none;}
+div.menusys_mega ul.level0 > li {padding: 0;margin:0 1px 0 0;float: left;display: block;border-bottom: none;background:url(../../images/bg-menu-items.png) no-repeat right center;}
+div.menusys_mega ul.level0 > li > a.item {padding:  10px 15px ;display: inline-block;position: relative;z-index: 12;text-shadow: 1px 1px 0 #000;}
+div.menusys_mega ul.level0 > li.last-item{background:none;}
+
+/* Fix IE8 */
+@media \0screen {div.menusys_mega ul.level0 li > a.item  {padding: 15px  ;}}
+
+div.menusys_mega ul.level0 li .has-image {display: block;padding: 0 0 0 30px;background-repeat: no-repeat;background-position: 2px 10px;}
+div.menusys_mega ul.level0 li span.menu-title {line-height: 40px;display: inline-block;color: #a5a4a0;font-size: 13px;text-transform:uppercase;font-weight:bold;}
+div.menusys_mega ul.level0 li > a.item > span > span.menu-desc {display: block;color:#ddd;font-weight: normal;font-size: 92%;}
+div.menusys_mega ul.level0 li.active > a.item { background: #f61630; text-shadow: none;}
+div.menusys_mega ul.level0 li.hover > a.item {  text-shadow: none;}
+div.menusys_mega ul.level0 li.active > a.item > span > span.menu-title { color:#fff; }
+div.menusys_mega ul.level0 li.hover > a.item > span > span.menu-title { color:#fff; }
+
+div.menusys_mega ul.level0 li.active { }
+div.menusys_mega ul.level0 li.hover { }
+div.menusys_mega ul.level0 li.active  span.menu-desc,
+div.menusys_mega ul.level0 li.hover  span.menu-desc{}
+div.menusys_mega ul.level0 > li.hasChild a.item > span.no-image{}
+div.menusys_mega ul.level0 > li.hasChild.hover > a.item > span.no-image,
+div.menusys_mega ul.level0 > li.hasChild.active > a.item > span.no-image{}
+
+/*  Boder Child Content  */
+div.menusys_mega .menusub_mega {position:absolute;opacity:0;}
+div.menusys_mega .menusub_mega .menusub_mega{margin: -40px 0px 0px 0px !important; }
+div.menusub_mega > div.submenu-wrap{background:#f61630;padding:5px; }
+div.menusys_mega div.subarrowtop{}
+div.menusys_mega div.subwrapcenter{ padding: 5px 0; display:table; }
+div.menusys_mega ul.mega-ul li.hasChild.hover .submenu-wrap {border-radius:5px;}
+
+/* Mega Grouped  */
+div.menusys_mega .mega-group {display:block;margin: 0 5px ;padding:  10px 3px ;border-bottom: 1px solid #C10D1F;}
+div.menusys_mega .mega-group span.no-image{background: none!important ;display: block;}
+div.menusys_mega .mega-group span.has-image{padding: 3px 0 3px 25px;display:block;  background-position: 2px 4px;}
+div.menusys_mega .mega-group > a.item{padding: 0 ;}
+div.menusys_mega div.submenu-wrap .mega-group .menu-title{color:#fff;padding: 0;font-size: 13px;display:block;line-height: 20px;}
+div.menusys_mega div.submenu-wrap .mega-group .menu-desc{color:#fff;font-size:11px;}
+
+/* Child Content  */
+#menusys_mega .menu-image {border: none;float: left;line-height: 44px;padding: 8px 0 0;margin-right: 3px;}
+div.menusys_mega .mega-module {}
+div.menusys_mega .mega-module .moduletable{}
+div.menusys_mega .mega-module .moduletable .modulecontent{color:#fff;width:auto; padding: 10px 0;}
+
+/* Level2 MegaMenu   */
+div.menusys_mega .megacol {float: left;width: 200px;}
+div.menusys_mega .megacol.first-item{border-left:none;}
+div.menusys_mega  ul.mega-ul{ margin:0px 5px;overflow:hidden;display:block;}
+div.menusys_mega ul.mega-ul li {padding: 0;float: none;display: block;background:none;}
+div.menusys_mega ul.mega-ul li.last-item{border-bottom:none;}
+div.menusys_mega ul.mega-ul li.hover{ background:none;}
+div.menusys_mega ul.mega-ul li.hasChild {background: url(http://skswisla.com/templates/zt_hong25/images/mega/arrowchild-ltr.png) no-repeat 95% 7px;}
+div.menusys_mega  ul.mega-ul li.mega-li a.item span.no-image{padding: 0 0 0 15px;display:block;background:url(../../images/arrow-menu.png) no-repeat 3px 8px;}
+div.menusys_mega  ul.mega-ul li.hover a.item:hover span.no-image{display:block;}
+
+div.menusys_mega  ul.mega-ul li.mega-li a.item{ padding: 4px 0;display: block;background: none;position: static;text-shadow: none;}
+div.menusys_mega  ul.mega-ul li.mega-li.hover > a.item{text-decoration: none;margin: 0;padding-left: 0px;display: block;background:#C10D1F;}
+							
+div.menusys_mega  ul.mega-ul li.mega-li a.item span.menu-title{color: #fff ;line-height: 23px;margin: 0;padding: 0px;display: block;font-size: 12px ;font-weight:normal;text-transform:none;}
+div.menusys_mega  ul.mega-ul li.mega-li.hover > a.item span.menu-title{color:#fff; text-shadow: 0 0 2px #c68c86;}
+div.menusys_mega  ul.mega-ul li.mega-li a.item .has-image{padding-left:25px; background-position:2px 4px;}
+div.menusys_mega  ul.mega-ul li.mega-li a.item .has-image span.menu-title{padding:  0;}

@@ -1,0 +1,112 @@
+# invoke rewrite engine
+RewriteEngine On
+RewriteBase /
+
+Options -Indexes
+<IfModule mod_negotiation.c>
+	Options -MultiViews
+</IfModule>
+
+# Prevent scraping from archive for free demo
+RewriteCond %{HTTP_USER_AGENT} (ia_archiver) [NC]
+RewriteRule . - [F,L]
+
+# Specific redirections
+RewriteRule ^index\.html$ / [L,R=301]
+RewriteRule ^index\.php/aktualnosci/archiwum$ index_php/aktualnosci/archiwum [L,R=301,QSD]
+RewriteRule ^index\.php/klub$ index_php/klub [L,R=301,QSD]
+RewriteRule ^index\.php/klub/historia$ index_php/klub/historia [L,R=301,QSD]
+RewriteRule ^index\.php/klub/stadion$ index_php/klub/stadion [L,R=301,QSD]
+RewriteRule ^index\.php/klub/zarzad$ index_php/klub/zarzad [L,R=301,QSD]
+RewriteRule ^index\.php/klub/sukcesy$ index_php/klub/sukcesy [L,R=301,QSD]
+RewriteRule ^index\.php/klub/kibice$ index_php/klub/kibice [L,R=301,QSD]
+RewriteRule ^index\.php/druzyna$ index_php/druzyna [L,R=301,QSD]
+RewriteRule ^index\.php/druzyna/sklad$ index_php/druzyna/sklad [L,R=301,QSD]
+RewriteRule ^index\.php/druzyna/kadraszkoleniowa$ index_php/druzyna/kadraszkoleniowa [L,R=301,QSD]
+RewriteRule ^index\.php/druzyna/transfery$ index_php/druzyna/transfery [L,R=301,QSD]
+RewriteRule ^index\.php/rozgrywki$ index_php/rozgrywki [L,R=301,QSD]
+RewriteRule ^index\.php/rozgrywki/iii-liga$ index_php/rozgrywki/iii-liga [L,R=301,QSD]
+RewriteRule ^index\.php/rozgrywki/iii-liga/terminarz-wyniki$ index_php/rozgrywki/iii-liga/terminarz-wyniki [L,R=301,QSD]
+RewriteRule ^index\.php/rozgrywki/iii-liga/tabela$ index_php/rozgrywki/iii-liga/tabela [L,R=301,QSD]
+RewriteRule ^index\.php/rozgrywki/puchar-polski$ index_php/rozgrywki/puchar-polski [L,R=301,QSD]
+RewriteRule ^index\.php/galeria$ index_php/galeria [L,R=301,QSD]
+RewriteRule ^index\.php/napisz-do-nas$ index_php/napisz-do-nas [L,R=301,QSD]
+RewriteRule ^index\.php/179-wisla-w-podwojnej-koronie$ index_php/179-wisla-w-podwojnej-koronie [L,R=301,QSD]
+RewriteRule ^index\.php/177-wisla-w-finale-opp$ index_php/177-wisla-w-finale-opp [L,R=301,QSD]
+RewriteRule ^index\.php/176-wisla-zostaje-w-iii-lidze$ index_php/176-wisla-zostaje-w-iii-lidze [L,R=301,QSD]
+RewriteRule ^index\.php/194-porazka-na-starcie$ index_php/194-porazka-na-starcie [L,R=301,QSD]
+RewriteRule ^index\.php/193-kadra-wisly-na-sezon-2015-2016$ index_php/193-kadra-wisly-na-sezon-2015-2016 [L,R=301,QSD]
+RewriteRule ^index\.php/192-zostan-czlonkiem-klubu$ index_php/192-zostan-czlonkiem-klubu [L,R=301,QSD]
+RewriteRule ^index\.php/191-wygrana-w-sparingu$ index_php/191-wygrana-w-sparingu [L,R=301,QSD]
+RewriteRule ^index\.php/190-polaniecka-trojka-w-wisle$ index_php/190-polaniecka-trojka-w-wisle [L,R=301,QSD]
+RewriteRule ^index\.php/189-informacje-z-klubu$ index_php/189-informacje-z-klubu [L,R=301,QSD]
+RewriteRule ^index\.php/188-kazimierz-kaczmarski-w-zarzadzie$ index_php/188-kazimierz-kaczmarski-w-zarzadzie [L,R=301,QSD]
+RewriteRule ^index\.php/187-pierwszy-trening-wisly-we-wtorek$ index_php/187-pierwszy-trening-wisly-we-wtorek [L,R=301,QSD]
+RewriteRule ^index\.php/186-ruchy-transferowe-w-klubie$ index_php/186-ruchy-transferowe-w-klubie [L,R=301,QSD]
+RewriteRule ^index\.php/185-wybrano-nowy-zarzad-wisly$ index_php/185-wybrano-nowy-zarzad-wisly [L,R=301,QSD]
+RewriteRule ^index\.php/184-gol-last-minute$ index_php/184-gol-last-minute [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^start=7$
+RewriteRule ^index\.php$ index_start-7 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^start=14$
+RewriteRule ^index\.php$ index_start-14 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^start=21$
+RewriteRule ^index\.php$ index_start-21 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^start=28$
+RewriteRule ^index\.php$ index_start-28 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^start=35$
+RewriteRule ^index\.php$ index_start-35 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^start=42$
+RewriteRule ^index\.php$ index_start-42 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^start=49$
+RewriteRule ^index\.php$ index_start-49 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^start=56$
+RewriteRule ^index\.php$ index_start-56 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^start=63$
+RewriteRule ^index\.php$ index_start-63 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^start=147$
+RewriteRule ^index\.php$ index_start-147 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^id=14$
+RewriteRule ^index\.php/component/content/article$ index_php/component/content/article_id-14 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^index\.php$ index_php [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^ismobile=0$
+RewriteRule ^$ ismobile-0 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^ismobile=1$
+RewriteRule ^$ ismobile-1 [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^id=14$
+RewriteRule ^index\.php/klub$ index_php/klub_id-14 [L,R=301,QSD]
+
+# Create pretty URLs
+DirectorySlash Off
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ %1 [NC,L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} (.*)/$
+RewriteRule ^(.*)/$ $1 [NC,L,R=301]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+# End: Create pretty URLs
+
+# Redirect all extensions to html
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.shtml$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.phtml$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.jhtml$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.htm$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.php$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.aspx$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.asp$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.jsp$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.apk$ $1.html [L,NC,R=301]
+# End: Redirect all extensions to html
