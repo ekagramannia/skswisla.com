@@ -1,0 +1,3299 @@
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xml:lang="pl-pl"
+  lang="pl-pl"
+  slick-uniqueid="3"
+  style="--wm-toolbar-height: 1px"
+>
+  <head>
+    <link
+      href="http://skswisla.com/templates/zt_hong25/favicon.ico"
+      rel="shortcut icon"
+      type="image/vnd.microsoft.icon"
+    />
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Super User" />
+    <meta name="generator" content="Joomla! - Open Source Content Management" />
+    <title>Mix editable templates</title>
+    <link rel="stylesheet" href="../style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://skswisla.com/templates/zt_hong25/zt_menus/zt_megamenu/zt.megamenu.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://skswisla.com/templates/system/css/system.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://skswisla.com/templates/system/css/general.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://skswisla.com/templates/zt_hong25/css/default.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://skswisla.com/templates/zt_hong25/css/typo.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://skswisla.com/modules/mod_image_show_gk4/styles/gk_sporter1/style.css"
+      type="text/css"
+    />
+    <script
+      src="https://skswisla.com/media/system/js/mootools-core.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="http://skswisla.com/media/system/js/core.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://skswisla.com/media/system/js/caption.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://skswisla.com/media/system/js/mootools-more.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://skswisla.com/plugins/system/imagesizer/lbscripts/mediabox/mediaboxAdv.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://skswisla.com/plugins/system/jcemediabox/js/jcemediabox.js?version=116"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://web.archive.orghttps://skswisla.com/templates/zt_hong25/zt_menus/zt_megamenu/zt.megamenu.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://web.archive.orghttps://skswisla.com/modules/mod_image_show_gk4/styles/gk_sporter1/engine.js"
+      type="text/javascript"
+    ></script>
+    <style>
+      #rara-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        background: blue; /* your theme color */
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 1000;
+      }
+
+      #rara-top.show {
+        opacity: 1;
+      }
+
+      #rara-top svg {
+        width: 24px;
+        height: 24px;
+      }
+      footer {
+        background: #111;
+        color: #fff;
+        padding: 30px 20px;
+        font-family: "Trebuchet MS", Geneva, sans-serif;
+        font-size: 14px;
+      }
+
+      .footer-columns {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .footer-col {
+        flex: 1 1 30%;
+        min-width: 220px;
+      }
+
+      .footer-nav .menu,
+      .category-module {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .footer-nav .menu > li,
+      .category-module li {
+        margin-bottom: 8px;
+      }
+
+      .footer-nav a,
+      .category-module a {
+        color: #ddd;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      .footer-nav a:hover,
+      .category-module a:hover {
+        color: #f9be32;
+      }
+
+      .realizacja {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .partners {
+        text-align: right;
+      }
+
+      .partners span {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      footer img {
+        opacity: 0.9;
+        transition: opacity 0.2s;
+      }
+
+      footer img:hover {
+        opacity: 1;
+      }
+      .product-card {
+        flex: 0 0 200px;
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 8px;
+        background: #fff;
+        transition: box-shadow 0.2s;
+      }
+
+      /* Изображение */
+      .product-image {
+        width: 100%;
+        border-radius: 4px;
+        display: block;
+        transition: box-shadow 0.3s ease;
+      }
+
+      /* Ховер тень */
+      .product-image-link:hover .product-image {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Заголовок под картинкой */
+      .product-title {
+        display: block;
+        font-size: 14px;
+        margin-top: 12px;
+        font-weight: bold;
+        font-family: Montserrat, sans-serif;
+        color: #333;
+        text-decoration: none;
+        cursor: pointer; /* курсор */
+      }
+
+      /* Эффект при наведении на заголовок */
+      .product-title:hover {
+        text-decoration: underline;
+        color: #000;
+      }
+    </style>
+  </head>
+
+  <body id="bd" class="fs3 ltr" cz-shortcut-listen="true">
+    <!-- END WAYBACK TOOLBAR INSERT -->
+    <div id="zt-wrapper">
+      <div id="zt-wrapper-inner">
+        <div id="zt-mainmenu" class="clearfix">
+          <div class="zt-wrapper">
+            <div id="zt-mainmenu-inner">
+              <div class="menusys_mega">
+                <ul id="menusys_mega" class="level0">
+                  <li id="menu-110" class="first-item hasChild item">
+                    <a
+                      href="../../index.html"
+                      class="item"
+                      id="menusys110"
+                      title="Aktualności"
+                      ><span class="no-image"
+                        ><span class="menu-title">Aktualności</span></span
+                      ></a
+                    >
+                    <div
+                      id="menu-110_menusub_sub0"
+                      class="menusub_mega"
+                      style="
+                        opacity: 1;
+                        margin: 0px;
+                        display: none;
+                        position: absolute;
+                        z-index: 999;
+                        top: 0px;
+                        left: 462px;
+                      "
+                    >
+                      <div
+                        class="submenu-wrap"
+                        style="margin-top: 0px; opacity: 1"
+                      >
+                        <div class="subarrowtop"></div>
+                        <div class="subwrapcenter" style="width: ">
+                          <div class="megacol column1">
+                            <ul class="mega-ul ul">
+                              <li class="mega-li li first-item">
+                                <a
+                                  href="../../index.html"
+                                  class="item"
+                                  id="menusys109"
+                                  title="Archiwum"
+                                  ><span class="no-image"
+                                    ><span class="menu-title"
+                                      >Archiwum</span
+                                    ></span
+                                  ></a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li id="menu-102" class="hasChild">
+                    <a
+                      href="../../index.php/klub.html"
+                      class="item active"
+                      id="menusys102"
+                      title="klub.html"
+                      ><span class="no-image"
+                        ><span class="menu-title">Klub</span></span
+                      ></a
+                    >
+                    <div
+                      id="menu-102_menusub_sub0"
+                      class="menusub_mega"
+                      style="
+                        opacity: 1;
+                        margin: 0px;
+                        display: none;
+                        position: absolute;
+                        z-index: 999;
+                        top: 127px;
+                        left: 588px;
+                      "
+                    >
+                      <div
+                        class="submenu-wrap"
+                        style="margin-top: -175px; opacity: 0"
+                      >
+                        <div class="subarrowtop"></div>
+                        <div class="subwrapcenter" style="width: ">
+                          <div class="megacol column1">
+                            <ul class="mega-ul ul">
+                              <li class="mega-li li first-item">
+                                <a
+                                  href="../../index.php/klub/historia.html"
+                                  class="item"
+                                  id="menusys130"
+                                  title="Historia"
+                                  ><span class="no-image"
+                                    ><span class="menu-title"
+                                      >Historia</span
+                                    ></span
+                                  ></a
+                                >
+                              </li>
+                              <li class="mega-li li">
+                                <a
+                                  href="../../index.php/klub/stadion.html"
+                                  class="item"
+                                  id="menusys131"
+                                  title="Stadion"
+                                  ><span class="no-image"
+                                    ><span class="menu-title"
+                                      >Stadion</span
+                                    ></span
+                                  ></a
+                                >
+                              </li>
+                              <li class="mega-li li">
+                                <a
+                                  href="../../index.php/klub/zarzad.html"
+                                  class="item"
+                                  id="menusys132"
+                                  title="Zarząd"
+                                  ><span class="no-image"
+                                    ><span class="menu-title"
+                                      >Zarząd</span
+                                    ></span
+                                  ></a
+                                >
+                              </li>
+                              <li class="mega-li li">
+                                <a
+                                  href="../../index.php/klub/sukcesy.html"
+                                  class="item"
+                                  id="menusys133"
+                                  title="Sukcesy"
+                                  ><span class="no-image"
+                                    ><span class="menu-title"
+                                      >Sukcesy</span
+                                    ></span
+                                  ></a
+                                >
+                              </li>
+                              <li class="mega-li li last-item">
+                                <a
+                                  href="../../index.php/klub/kibice.html"
+                                  class="item"
+                                  id="menusys134"
+                                  title="Kibice"
+                                  ><span class="no-image"
+                                    ><span class="menu-title"
+                                      >Kibice</span
+                                    ></span
+                                  ></a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li id="menu-108" class="hasChild">
+                    <a
+                      href="/index_php/druzyna.html"
+                      class="item"
+                      id="menusys108"
+                      title="Drużyna"
+                      ><span class="no-image"
+                        ><span class="menu-title">Drużyna</span></span
+                      ></a
+                    >
+                    <div
+                      id="menu-108_menusub_sub0"
+                      class="menusub_mega"
+                      style="opacity: 0; margin: 0px; display: none"
+                    >
+                      <div class="submenu-wrap" style="margin-top: -10000px">
+                        <div class="subarrowtop"></div>
+                        <div class="subwrapcenter" style="width: ">
+                          <div class="megacol column1">
+                            <ul class="mega-ul ul">
+                              <li class="mega-li li first-item">
+                                <a
+                                  href="../../druzyna/sklad.html"
+                                  class="item"
+                                  id="menusys127"
+                                  title="Skład"
+                                  ><span class="no-image"
+                                    ><span class="menu-title">Skład</span></span
+                                  ></a
+                                >
+                              </li>
+                              <li class="mega-li li">
+                                <a
+                                  href="../../index_php/druzyna/kadraszkoleniowa.html"
+                                  class="item"
+                                  id="menusys128"
+                                  title="Sztab szkoleniowy"
+                                  ><span class="no-image"
+                                    ><span class="menu-title"
+                                      >Sztab szkoleniowy</span
+                                    ></span
+                                  ></a
+                                >
+                              </li>
+                              <li class="mega-li li last-item">
+                                <a
+                                  href="../../index_php/druzyna/transfery.html"
+                                  class="item"
+                                  id="menusys129"
+                                  title="Transfery"
+                                  ><span class="no-image"
+                                    ><span class="menu-title"
+                                      >Transfery</span
+                                    ></span
+                                  ></a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li id="menu-172" class="hasChild item">
+                    <a
+                      href="../../index_php/rozgrywki.html"
+                      class="item"
+                      id="menusys172"
+                      title="Rozgrywki"
+                      ><span class="no-image"
+                        ><span class="menu-title">Rozgrywki</span></span
+                      ></a
+                    >
+                    <div
+                      id="menu-172_menusub_sub0"
+                      class="menusub_mega"
+                      style="opacity: 0; margin: 0px; display: none"
+                    >
+                      <div class="submenu-wrap" style="margin-top: -10000px">
+                        <div class="subarrowtop"></div>
+                        <div class="subwrapcenter" style="width: ">
+                          <div class="megacol column1">
+                            <ul class="mega-ul ul">
+                              <li
+                                id="menu-173"
+                                class="mega-li li first-item hasChild"
+                              >
+                                <a
+                                  href="../../index_php/rozgrywki/iii-liga.html"
+                                  class="item"
+                                  id="menusys173"
+                                  title="III liga"
+                                  ><span class="no-image"
+                                    ><span class="menu-title"
+                                      >III liga</span
+                                    ></span
+                                  ></a
+                                >
+                                <div
+                                  id="menu-173_menusub_sub2"
+                                  class="menusub_mega"
+                                  style="opacity: 0; margin: 0px"
+                                >
+                                  <div
+                                    class="submenu-wrap"
+                                    style="margin-top: -10000px"
+                                  >
+                                    <div class="subarrowtop"></div>
+                                    <div class="subwrapcenter" style="width: ">
+                                      <div class="megacol column1">
+                                        <ul class="mega-ul ul">
+                                          <li class="mega-li li first-item">
+                                            <a
+                                              href="../../index_php/rozgrywki/iii-liga/terminarz-wyniki.html"
+                                              class="item"
+                                              id="menusys174"
+                                              title="Terminarz/Wyniki"
+                                              ><span class="no-image"
+                                                ><span class="menu-title"
+                                                  >Terminarz/Wyniki</span
+                                                ></span
+                                              ></a
+                                            >
+                                          </li>
+                                          <li class="mega-li li last-item">
+                                            <a
+                                              href="../../index_php/rozgrywki/iii-liga/tabela.html"
+                                              class="item"
+                                              id="menusys175"
+                                              title="Tabela"
+                                              ><span class="no-image"
+                                                ><span class="menu-title"
+                                                  >Tabela</span
+                                                ></span
+                                              ></a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="mega-li li last-item">
+                                <a
+                                  href="../../index_php/rozgrywki/puchar-polski.html"
+                                  class="item"
+                                  id="menusys176"
+                                  title="Puchar Polski"
+                                  ><span class="no-image"
+                                    ><span class="menu-title"
+                                      >Puchar Polski</span
+                                    ></span
+                                  ></a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <a
+                      href="../../index_php/galeria.html"
+                      class="item"
+                      id="menusys151"
+                      title="Galeria"
+                      ><span class="no-image"
+                        ><span class="menu-title">Galeria</span></span
+                      ></a
+                    >
+                  </li>
+                  <li class="last-item item">
+                    <a
+                      href="../../index_php/napisz-do-nas.html"
+                      class="item"
+                      id="menusys136"
+                      title="Kontakt"
+                      ><span class="no-image"
+                        ><span class="menu-title">Kontakt</span></span
+                      ></a
+                    >
+                  </li>
+                  <li class="item">
+                    <a
+                      href="../passport/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="passport"
+                      ><span class="no-image"
+                        ><span class="menu-title">Passport</span></span
+                      ></a
+                    >
+                  </li>
+                  <li class="item last-item">
+                    <a
+                      href="../passport-photolook/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="passport photolook"
+                      ><span class="no-image"
+                        ><span class="menu-title"
+                          >Passport Photolook</span
+                        ></span
+                      ></a
+                    >
+                  </li>
+                  <li class="item">
+                    <a
+                      href="../driving-license/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="driving license"
+                      ><span class="no-image"
+                        ><span class="menu-title">Driving license</span></span
+                      ></a
+                    >
+                  </li>
+                  <li class="item">
+                    <a
+                      href="../driving-license-photolook/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="driving license photolook"
+                      ><span class="no-image"
+                        ><span class="menu-title"
+                          >Driving license photolook</span
+                        ></span
+                      ></a
+                    >
+                  </li>
+                  <li class="item">
+                    <a
+                      href="../certificate/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="Certificate"
+                      ><span class="no-image"
+                        ><span class="menu-title">Certificate</span></span
+                      ></a
+                    >
+                  </li>
+                  <li class="item">
+                    <a
+                      href="../credit-card/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="credit card"
+                      ><span class="no-image"
+                        ><span class="menu-title">Credit Card</span></span
+                      ></a
+                    >
+                  </li>
+                  <li class="item">
+                    <a
+                      href="../credit-card-photolook/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="credit card photolook"
+                      ><span class="no-image"
+                        ><span class="menu-title"
+                          >Credit Card photolook</span
+                        ></span
+                      ></a
+                    >
+                  </li>
+                  <li class="last-item item">
+                    <a
+                      href="../id-card/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="id card"
+                      ><span class="no-image"
+                        ><span class="menu-title">Id card</span></span
+                      ></a
+                    >
+                  </li>
+                  <li class="item">
+                    <a
+                      href="../id-card-photolook/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="id card photolook"
+                      ><span class="no-image"
+                        ><span class="menu-title">Id card photolook</span></span
+                      ></a
+                    >
+                  </li>
+                  <li class="item">
+                    <a
+                      href="../travel-visa/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="travel visa"
+                      ><span class="no-image"
+                        ><span class="menu-title">Travel Visa</span></span
+                      ></a
+                    >
+                  </li>
+                  <li class="item">
+                    <a
+                      href="../bank-statement/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="bank statement"
+                      ><span class="no-image"
+                        ><span class="menu-title">Bank Statement</span></span
+                      ></a
+                    >
+                  </li>
+                  <li class="item">
+                    <a
+                      href="../business-bank-statement/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="business bank statement"
+                      ><span class="no-image"
+                        ><span class="menu-title"
+                          >Business Bank Statement</span
+                        ></span
+                      ></a
+                    >
+                  </li>
+                  <li class="item">
+                    <a
+                      href="../utility-bill/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="utility bill"
+                      ><span class="no-image"
+                        ><span class="menu-title">Utility bill</span></span
+                      ></a
+                    >
+                  </li>
+                  <li class="item">
+                    <a
+                      href="../business-utility-bill/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="business utility bill"
+                      ><span class="no-image"
+                        ><span class="menu-title"
+                          >Business utility bill</span
+                        ></span
+                      ></a
+                    >
+                  </li>
+                  <li class="item">
+                    <a
+                      href="../mix/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="residence permit"
+                      ><span class="no-image"
+                        ><span class="menu-title">residence permit</span></span
+                      ></a
+                    >
+                  </li>
+                  <li class="item">
+                    <a
+                      href="../residence-permit-photolook/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="residence permit"
+                      ><span class="no-image"
+                        ><span class="menu-title"
+                          >residence permit photolook</span
+                        ></span
+                      ></a
+                    >
+                  </li>
+                  <li class="item item active">
+                    <a
+                      href="../mix/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="mix"
+                      ><span class="no-image"
+                        ><span class="menu-title">mix</span></span
+                      ></a
+                    >
+                  </li>
+                  <li class="item last-item">
+                    <a
+                      href="../mix-photolook/index.html"
+                      class="item"
+                      id="menusys151"
+                      title="mix"
+                      ><span class="no-image"
+                        ><span class="menu-title">mix photolook</span></span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Блок для продуктов -->
+        <div
+          id="store-products"
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            width: 70%;
+            margin: 0 auto;
+            justify-content: flex-start;
+          "
+        >
+          <header style="flex: 1 1 100%; margin-bottom: 20px">
+            <h1
+              style="
+                font-size: 36px;
+                line-height: 1.25em;
+                font-weight: 500;
+                font-family: Montserrat, sans-serif;
+                color: #111;
+                position: relative;
+                padding-bottom: 10px;
+                margin-bottom: 35px;
+                display: inline-block;
+              "
+            >
+              Mix
+              <span
+                style="
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  bottom: 0;
+                  width: 60px;
+                  height: 3px;
+                  background: red;
+                  border-radius: 2px;
+                "
+              ></span>
+            </h1>
+          </header>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/afghanistan-citizen-proof/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/AFGHANISTAN Citizen proof of registration card PSD.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/afghanistan-citizen-proof/index.html"
+              class="product-title"
+              >AFGHANISTAN Citizen proof of registration card PSD</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/australia-new-south-wales/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/AUSTRALIA New South Wales.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/australia-new-south-wales/index.html"
+              class="product-title"
+              >AUSTRALIA New South Wales</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/australia-medicare-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Australia Medicare card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/australia-medicare-card/index.html"
+              class="product-title"
+              >Australia Medicare card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/australia-transport-for-nsw/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Australia Transport for NSW Registration certificate.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/australia-transport-for-nsw/index.html"
+              class="product-title"
+              >Australia Transport for NSW Registration certificate</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/australia-victoria-proof/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Australia Victoria proof of age card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/australia-victoria-proof/index.html"
+              class="product-title"
+              >Australia Victoria proof of age card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/australia-business-registration-word/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Australia business registration Word and PDF template scr.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/australia-business-registration-word/index.html"
+              class="product-title"
+              >Australia business registration Word and PDF template scr</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/australian-securities-and-investments/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Australian Securities and Investments Commission’s (ASIC) Certificate of Company Registration 1.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/australian-securities-and-investments/index.html"
+              class="product-title"
+              >Australian Securities and Investments Commission’s ASIC
+              Certificate of Company Registration 1</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/australian-securities-and-investments-2/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Australian Securities and Investments Commission’s (ASIC) Certificate of Company Registration 2.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/australian-securities-and-investments-2/index.html"
+              class="product-title"
+              >Australian Securities and Investments Commission’s ASIC
+              Certificate of Company Registration 2</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/austria-klima-ticket/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Austria Klima Ticket S.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/austria-klima-ticket/index.html"
+              class="product-title"
+              >Austria Klima Ticket S</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/austria-zmr-zentrales-melderegister/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Austria ZMR Zentrales Melderegister Central register of residents document template in Word format.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/austria-zmr-zentrales-melderegister/index.html"
+              class="product-title"
+              >Austria ZMR Zentrales Melderegister Central register of residents
+              document template in Word</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/austria-vehicle-registration-certificate/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Austria vehicle registration certificate part 1.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/austria-vehicle-registration-certificate/index.html"
+              class="product-title"
+              >Austria vehicle registration certificate part 1</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/bangladesh-covid-19-vaccination-certificate/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Bangladesh COVID-19 vaccination certificate Word and PDF template.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/bangladesh-covid-19-vaccination-certificate/index.html"
+              class="product-title"
+              >Bangladesh COVID-19 vaccination certificate Word and PDF
+              template</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/bangladesh-dhaka-south-city/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Bangladesh Dhaka South City Corporation Gazi Travel Service Trade licence template in Word and PDF format, fully editable.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/bangladesh-dhaka-south-city/index.html"
+              class="product-title"
+              >Bangladesh Dhaka South City Corporation Gazi Travel Service Trade
+              licence, fully editable</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/china-health-insurance/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/CHINA health insurance.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/china-health-insurance/index.html"
+              class="product-title"
+              >CHINA health insurance</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/canada-british-columbia-international/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Canada British Columbia international yacht training card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/canada-british-columbia-international/index.html"
+              class="product-title"
+              >Canada British Columbia international yacht training card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/canada-markham-stouffville-hospital/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Canada Markham Stouffville Hospital medical insurance statement template in .doc and .pdf format.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/canada-markham-stouffville-hospital/index.html"
+              class="product-title"
+              >Canada Markham Stouffville Hospital medical insurance statement
+              template in .doc and .pdf</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/canada-quebec-health-insurance/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Canada Quebec health insurance card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/canada-quebec-health-insurance/index.html"
+              class="product-title"
+              >Canada Quebec health insurance card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/canada-québec-health-insurance/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Canada Québec health insurance card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/canada-québec-health-insurance/index.html"
+              class="product-title"
+              >Canada Québec health insurance card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/canada-saskatchewan-permit/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Canada Saskatchewan Permit to operate waste disposal grounds.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/canada-saskatchewan-permit/index.html"
+              class="product-title"
+              >Canada Saskatchewan Permit to operate waste disposal grounds</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/canada-certificate-indian/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Canada certificate of Indian status.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/canada-certificate-indian/index.html"
+              class="product-title"
+              >Canada certificate of Indian status</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/canada-social-insurance-number/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Canada social insurance number (SIN) card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/canada-social-insurance-number/index.html"
+              class="product-title"
+              >Canada social insurance number SIN card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/canada-study-permit/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Canada study permit.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/canada-study-permit/index.html"
+              class="product-title"
+              >Canada study permit</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/china-business-resgistration-regulations/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/China business resgistration regulations.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/china-business-resgistration-regulations/index.html"
+              class="product-title"
+              >China business resgistration regulations</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/china-certificate-incorporation/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/China certificate of Incorporation.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/china-certificate-incorporation/index.html"
+              class="product-title"
+              >China certificate of Incorporation</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/china-foreign-embassyconsulate-authentication/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/China foreign embassyconsulate authentication label notary stamp PSD template.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/china-foreign-embassyconsulate-authentication/index.html"
+              class="product-title"
+              >China foreign embassyconsulate authentication label notary stamp
+              PSD template</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/chinese-diploma/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Chinese diploma.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/chinese-diploma/index.html"
+              class="product-title"
+              >Chinese diploma</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/colombia-temporary-protection-leave/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Colombia temporary protection leave card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/colombia-temporary-protection-leave/index.html"
+              class="product-title"
+              >Colombia temporary protection leave card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/denmark-health-insurance-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/DENMARK health insurance card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/denmark-health-insurance-card/index.html"
+              class="product-title"
+              >DENMARK health insurance card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/el-salvador-public-health/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/EL SALVADOR public health council (consejo superior de salud pública).jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/el-salvador-public-health/index.html"
+              class="product-title"
+              >EL SALVADOR public health council consejo superior de salud
+              pública</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/france-edf-attestation/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/France EDF attestation de contrat.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/france-edf-attestation/index.html"
+              class="product-title"
+              >France EDF attestation de contrat</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/france-carte-mobilite-inclusion/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/France carte mobilite inclusion (CMI).jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/france-carte-mobilite-inclusion/index.html"
+              class="product-title"
+              >France carte mobilite inclusion CMI</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/france-taxi-driver-id/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/France taxi driver ID card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/france-taxi-driver-id/index.html"
+              class="product-title"
+              >France taxi driver ID card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/germany-protokollausweis-für-diplomaten/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Germany protokollausweis für diplomaten.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/germany-protokollausweis-für-diplomaten/index.html"
+              class="product-title"
+              >Germany protokollausweis für diplomaten</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/germany-vehicle-registration-certificate/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Germany vehicle registration certificate.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/germany-vehicle-registration-certificate/index.html"
+              class="product-title"
+              >Germany vehicle registration certificate</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/ghana-health-insurance-id/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Ghana health insurance ID card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/ghana-health-insurance-id/index.html"
+              class="product-title"
+              >Ghana health insurance ID card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/greece-police-id-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Greece police ID card 2016-present.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/greece-police-id-card/index.html"
+              class="product-title"
+              >Greece police ID card 2016-present</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/greece-police-id-card-2/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Greece police ID card 2023-present.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/greece-police-id-card-2/index.html"
+              class="product-title"
+              >Greece police ID card 2023-present</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/ielts-test-report-form/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/IELTS test report form certificate.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/ielts-test-report-form/index.html"
+              class="product-title"
+              >IELTS test report form certificate</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/india-aadhaar-pvc-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/India Aadhaar PVC Card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/india-aadhaar-pvc-card/index.html"
+              class="product-title"
+              >India Aadhaar PVC Card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/india-tamil-nadu-registration/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/India Tamil Nadu registration certificate.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/india-tamil-nadu-registration/index.html"
+              class="product-title"
+              >India Tamil Nadu registration certificate</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/israel-bank-hapoalim-account/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Israel Bank Hapoalim Account Management Approval.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/israel-bank-hapoalim-account/index.html"
+              class="product-title"
+              >Israel Bank Hapoalim Account Management Approval</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/israel-tax-authority-dealer/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Israel Tax Authority dealer approval Word and PDF template, version 2.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/israel-tax-authority-dealer/index.html"
+              class="product-title"
+              >Israel Tax Authority dealer approval Word and PDF template,
+              version 2</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/israel-tax-authority-dealer-2/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Israel Tax Authority dealer approval.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/israel-tax-authority-dealer-2/index.html"
+              class="product-title"
+              >Israel Tax Authority dealer approval</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/italy-tessera-sanitaria-health-insurance/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Italy Tessera Sanitaria (health insurance card) version 2.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/italy-tessera-sanitaria-health-insurance/index.html"
+              class="product-title"
+              >Italy Tessera Sanitaria health insurance card version 2</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/italy-tessera-sanitaria-health-insurance-2/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Italy Tessera Sanitaria (health insurance card).jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/italy-tessera-sanitaria-health-insurance-2/index.html"
+              class="product-title"
+              >Italy Tessera Sanitaria health insurance card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/italy-health-insurance-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Italy health insurance card (Tessera sanitaria).jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/italy-health-insurance-card/index.html"
+              class="product-title"
+              >Italy health insurance card Tessera sanitaria</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/kazakhstan-inheritance-certificate/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Kazakhstan inheritance certificate.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/kazakhstan-inheritance-certificate/index.html"
+              class="product-title"
+              >Kazakhstan inheritance certificate</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/kenya-certificate-registration/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Kenya certificate of registration of schools.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/kenya-certificate-registration/index.html"
+              class="product-title"
+              >Kenya certificate of registration of schools</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/lesotho-national-registration/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Lesotho national registration.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/lesotho-national-registration/index.html"
+              class="product-title"
+              >Lesotho national registration</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/lithuania-accreditation-certificate-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Lithuania accreditation certificate card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/lithuania-accreditation-certificate-card/index.html"
+              class="product-title"
+              >Lithuania accreditation certificate card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/montenegro-vehicle-registration-certificate/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/MONTENEGRO vehicle registration certificate.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/montenegro-vehicle-registration-certificate/index.html"
+              class="product-title"
+              >MONTENEGRO vehicle registration certificate</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/malaysia-jpj-vehicle-ownership/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Malaysia JPJ Vehicle Ownership Certificate (VOC), car registration card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/malaysia-jpj-vehicle-ownership/index.html"
+              class="product-title"
+              >Malaysia JPJ Vehicle Ownership Certificate VOC, car registration
+              card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/mexico-nss-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Mexico NSS card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/mexico-nss-card/index.html"
+              class="product-title"
+              >Mexico NSS card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/mexico-permiso-para-circular/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Mexico Permiso Para Circular Sin Placas.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/mexico-permiso-para-circular/index.html"
+              class="product-title"
+              >Mexico Permiso Para Circular Sin Placas</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/mexico-registro-de-poblacion/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Mexico Registro de Poblacion de Mexico (CURP number) PSD template, version 2.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/mexico-registro-de-poblacion/index.html"
+              class="product-title"
+              >Mexico Registro de Poblacion de Mexico CURP number PSD template,
+              version 2</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/mexico-registro-de-poblacion-2/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Mexico Registro de Poblacion de Mexico (CURP number).jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/mexico-registro-de-poblacion-2/index.html"
+              class="product-title"
+              >Mexico Registro de Poblacion de Mexico CURP number</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/mexico-sistema-educativo-nacional/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Mexico Sistema educativo nacional.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/mexico-sistema-educativo-nacional/index.html"
+              class="product-title"
+              >Mexico Sistema educativo nacional</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/mexico-universidad-nacional-autonoma/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Mexico Universidad Nacional Autonoma de Mexico Secretaria General.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/mexico-universidad-nacional-autonoma/index.html"
+              class="product-title"
+              >Mexico Universidad Nacional Autonoma de Mexico Secretaria
+              General</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/mexico-instito-nacional-version-2/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Mexico instito nacional(version 2).jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/mexico-instito-nacional-version-2/index.html"
+              class="product-title"
+              >Mexico instito nacionalversion 2</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/mexico-instituto-nacional-electoral/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Mexico instituto nacional electoral.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/mexico-instituto-nacional-electoral/index.html"
+              class="product-title"
+              >Mexico instituto nacional electoral</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/new-south-wales-national/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/NEW SOUTH WALES national license.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/new-south-wales-national/index.html"
+              class="product-title"
+              >NEW SOUTH WALES national license</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/nigeria-voter's-id-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Nigeria Voter's ID card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/nigeria-voter's-id-card/index.html"
+              class="product-title"
+              >Nigeria Voter's ID card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/norway-police-id-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Norway Police ID card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/norway-police-id-card/index.html"
+              class="product-title"
+              >Norway Police ID card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/pakistan-immunization-certificate-for/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Pakistan immunization certificate for covid-19.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/pakistan-immunization-certificate-for/index.html"
+              class="product-title"
+              >Pakistan immunization certificate for covid-19</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/philippines-san-jose-del/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Philippines San Jose Del Monte voters ID card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/philippines-san-jose-del/index.html"
+              class="product-title"
+              >Philippines San Jose Del Monte voters ID card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/philippines-bureau-internal/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Philippines bureau of internal revenue ID 2022-present.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/philippines-bureau-internal/index.html"
+              class="product-title"
+              >Philippines bureau of internal revenue ID 2022-present</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/philippines-bureau-internal-2/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Philippines bureau of internal revenue.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/philippines-bureau-internal-2/index.html"
+              class="product-title"
+              >Philippines bureau of internal revenue</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/philippines-citizens-affairs-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Philippines citizens affairs card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/philippines-citizens-affairs-card/index.html"
+              class="product-title"
+              >Philippines citizens affairs card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/philippines-health-insurance-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Philippines health insurance card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/philippines-health-insurance-card/index.html"
+              class="product-title"
+              >Philippines health insurance card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/poland-foreigner-work-certificate/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Poland foreigner work certificate page 1.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/poland-foreigner-work-certificate/index.html"
+              class="product-title"
+              >Poland foreigner work certificate page 1</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/poland-foreigner-work-certificate-2/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Poland foreigner work certificate page 2.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/poland-foreigner-work-certificate-2/index.html"
+              class="product-title"
+              >Poland foreigner work certificate page 2</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/qatar-registration-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/QATAR registration card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/qatar-registration-card/index.html"
+              class="product-title"
+              >QATAR registration card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/republic-north-macedonia/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Republic of North Macedonia Public Revenue Administration income tax advance payment recapitulation template.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/republic-north-macedonia/index.html"
+              class="product-title"
+              >Republic of North Macedonia Public Revenue Administration income
+              tax advance payment recapitulation template</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/republica-dominicana-consulado-en/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Republica Dominicana consulado en Nueva York.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/republica-dominicana-consulado-en/index.html"
+              class="product-title"
+              >Republica Dominicana consulado en Nueva York</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/romania-medical-certificate/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Romania medical certificate.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/romania-medical-certificate/index.html"
+              class="product-title"
+              >Romania medical certificate</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/romania-medical-statement/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Romania medical statement.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/romania-medical-statement/index.html"
+              class="product-title"
+              >Romania medical statement</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/russia-belarus-migration-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Russia Belarus migration card (миграционная карта) template in PSD format, with all fonts.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/russia-belarus-migration-card/index.html"
+              class="product-title"
+              >Russia Belarus migration card миграционная карта template in PSD,
+              with all fonts</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/russia-medical-certificate-on/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Russia medical certificate on Covid-19.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/russia-medical-certificate-on/index.html"
+              class="product-title"
+              >Russia medical certificate on Covid-19</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/russia-seafarers-identity-document/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Russia seafarers identity document.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/russia-seafarers-identity-document/index.html"
+              class="product-title"
+              >Russia seafarers identity document</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/saudi-arabia-vehicles-registration/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/SAUDI ARABIA vehicles registration.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/saudi-arabia-vehicles-registration/index.html"
+              class="product-title"
+              >SAUDI ARABIA vehicles registration</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/sudan-doctors-union-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/SUDAN doctors union card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/sudan-doctors-union-card/index.html"
+              class="product-title"
+              >SUDAN doctors union card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/singapore-work-permit/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Singapore work permit.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/singapore-work-permit/index.html"
+              class="product-title"
+              >Singapore work permit</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/south-korea-alien-registration/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/South Korea Alien Registration Card (ARC).jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/south-korea-alien-registration/index.html"
+              class="product-title"
+              >South Korea Alien Registration Card ARC</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/spain-registration-certificate/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Spain registration certificate of union citizen.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/spain-registration-certificate/index.html"
+              class="product-title"
+              >Spain registration certificate of union citizen</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/sweden-lma-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Sweden LMA card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/sweden-lma-card/index.html"
+              class="product-title"
+              >Sweden LMA card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/switzerland-banque-heritage-know/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Switzerland Banque Heritage Know Your Client (KYC) Application Form.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/switzerland-banque-heritage-know/index.html"
+              class="product-title"
+              >Switzerland Banque Heritage Know Your Client KYC Application
+              Form</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/switzerland-source-wealth/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Switzerland Source of Wealth Declaration Heritage Bank.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/switzerland-source-wealth/index.html"
+              class="product-title"
+              >Switzerland Source of Wealth Declaration Heritage Bank</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/switzerland-health-insurance-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Switzerland health insurance card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/switzerland-health-insurance-card/index.html"
+              class="product-title"
+              >Switzerland health insurance card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/tanzania-business-license/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/TANZANIA business license ).jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/tanzania-business-license/index.html"
+              class="product-title"
+              >TANZANIA business license
+            </a>
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/taiwan-national-health-insurance/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Taiwan national health insurance.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/taiwan-national-health-insurance/index.html"
+              class="product-title"
+              >Taiwan national health insurance</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/turkey-ministry-justice/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Turkey Ministry of Justice Criminal Record Certificate.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/turkey-ministry-justice/index.html"
+              class="product-title"
+              >Turkey Ministry of Justice Criminal Record Certificate</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/turkey-ministry-internal/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Turkey ministry of internal affairs ID card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/turkey-ministry-internal/index.html"
+              class="product-title"
+              >Turkey ministry of internal affairs ID card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/u.s.-citizenship-and-immigration/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/U.S. Citizenship and Immigration services form I-797C, Notice of action.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/u.s.-citizenship-and-immigration/index.html"
+              class="product-title"
+              >U.S. Citizenship and Immigration services form I-797C, Notice of
+              action</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/uk-certificate-motor/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/UK Certificate of Motor Insurance.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/uk-certificate-motor/index.html"
+              class="product-title"
+              >UK Certificate of Motor Insurance</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/uk-pass-citizen-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/UK pass citizen card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/uk-pass-citizen-card/index.html"
+              class="product-title"
+              >UK pass citizen card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/united-kingdom-application-registration/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/UNITED KINGDOM application registration.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/united-kingdom-application-registration/index.html"
+              class="product-title"
+              >UNITED KINGDOM application registration</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/united-kingdom-border-agency/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/UNITED KINGDOM border agency application registration card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/united-kingdom-border-agency/index.html"
+              class="product-title"
+              >UNITED KINGDOM border agency application registration card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-arkansas-commercial-contractors/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA Arkansas Commercial Contractors License.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-arkansas-commercial-contractors/index.html"
+              class="product-title"
+              >USA Arkansas Commercial Contractors License</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-colorado-certificate/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA Colorado Certificate of fact of trade name.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-colorado-certificate/index.html"
+              class="product-title"
+              >USA Colorado Certificate of fact of trade name</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-florida-contractor-business/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA Florida Contractor Business license.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-florida-contractor-business/index.html"
+              class="product-title"
+              >USA Florida Contractor Business license</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-form-i-797a-notice/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA Form I-797A, Notice of Action.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-form-i-797a-notice/index.html"
+              class="product-title"
+              >USA Form I-797A, Notice of Action</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-form-i-797b-notice/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA Form I-797B, Notice of Action template in Word and PDF format (2 pages).jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-form-i-797b-notice/index.html"
+              class="product-title"
+              >USA Form I-797B, Notice of Action 2 pages</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-geneva-conventions-id/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA Geneva Conventions ID card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-geneva-conventions-id/index.html"
+              class="product-title"
+              >USA Geneva Conventions ID card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-hi-pay-stub/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA HI pay stub.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-hi-pay-stub/index.html"
+              class="product-title"
+              >USA HI pay stub</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-internal-revenue-service/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA INTERNAL REVENUE SERVICE (IRS) Employer Identification Number (EIN) business registration.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-internal-revenue-service/index.html"
+              class="product-title"
+              >USA INTERNAL REVENUE SERVICE IRS Employer Identification Number
+              EIN business registration</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-maryland-sc&h-group/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA Maryland SC&H Group Management consulting services company.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-maryland-sc&h-group/index.html"
+              class="product-title"
+              >USA Maryland SC&H Group Management consulting services company</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-michigan-pay-stub/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA Michigan pay stub.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-michigan-pay-stub/index.html"
+              class="product-title"
+              >USA Michigan pay stub</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-new-york-state/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA New York state Medicaid card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-new-york-state/index.html"
+              class="product-title"
+              >USA New York state Medicaid card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-new-york-state-2/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA New York state prescription.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-new-york-state-2/index.html"
+              class="product-title"
+              >USA New York state prescription</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-or-pay-stub/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA OR pay stub.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-or-pay-stub/index.html"
+              class="product-title"
+              >USA OR pay stub</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-oklahoma-adesa-auto/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA Oklahoma Adesa Auto Auction Bill of Sale 9 pages.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-oklahoma-adesa-auto/index.html"
+              class="product-title"
+              >USA Oklahoma Adesa Auto Auction Bill of Sale 9 pages</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-pennsylvania-certificate/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA Pennsylvania Certificate of Liability Insurance.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-pennsylvania-certificate/index.html"
+              class="product-title"
+              >USA Pennsylvania Certificate of Liability Insurance</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-scp-id-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA SCP ID card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-scp-id-card/index.html"
+              class="product-title"
+              >USA SCP ID card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-sentara-pratt-medical/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA Sentara Pratt Medical Group billing statement.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-sentara-pratt-medical/index.html"
+              class="product-title"
+              >USA Sentara Pratt Medical Group billing statement</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-texas-auto-insurance/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA Texas Auto Insurance.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-texas-auto-insurance/index.html"
+              class="product-title"
+              >USA Texas Auto Insurance</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-texas-independent-motor/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA Texas Independent Motor Vehicle Dealer.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-texas-independent-motor/index.html"
+              class="product-title"
+              >USA Texas Independent Motor Vehicle Dealer</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-the-university/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA The University of Pittsburgh Student ID card, Panther card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-the-university/index.html"
+              class="product-title"
+              >USA The University of Pittsburgh Student ID card, Panther card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/usa-military-id-card/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/USA military ID card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/usa-military-id-card/index.html"
+              class="product-title"
+              >USA military ID card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/united-kingdom-ielts-report/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/United Kingdom Ielts report form.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/united-kingdom-ielts-report/index.html"
+              class="product-title"
+              >United Kingdom Ielts report form</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/united-kingdom-certificate/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/United Kingdom certificate of competence.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/united-kingdom-certificate/index.html"
+              class="product-title"
+              >United Kingdom certificate of competence</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/united-kingdom-electrotechnical-certification/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/United Kingdom electrotechnical certification scheme (ECS) card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/united-kingdom-electrotechnical-certification/index.html"
+              class="product-title"
+              >United Kingdom electrotechnical certification scheme ECS card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/united-kingdom-pass-proof/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/United Kingdom pass proof of age citizencard.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/united-kingdom-pass-proof/index.html"
+              class="product-title"
+              >United Kingdom pass proof of age citizencard</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/united-states-new-york/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/United States New York state unrestricted concealed carry license.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/united-states-new-york/index.html"
+              class="product-title"
+              >United States New York state unrestricted concealed carry
+              license</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/vietnam-work-permit-version/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/VIETNAM work permit version 2.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/vietnam-work-permit-version/index.html"
+              class="product-title"
+              >VIETNAM work permit version 2</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/vietnam-work-permit/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/VIETNAM work permit.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/vietnam-work-permit/index.html"
+              class="product-title"
+              >VIETNAM work permit</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/vehicle-inspection-report/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Vehicle Inspection reporT.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/vehicle-inspection-report/index.html"
+              class="product-title"
+              >Vehicle Inspection reporT</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/western-australia-approved-manager/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/Western Australia approved manager license card.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/western-australia-approved-manager/index.html"
+              class="product-title"
+              >Western Australia approved manager license card</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/a-developing-guide/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/a developing guide to make a super fast screenshots.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/a-developing-guide/index.html"
+              class="product-title"
+              >a developing guide to make a super fast screenshots</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/employee-attendance-sheet-template/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/employee attendance sheet template in Excel and PDF format, fully editable.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/employee-attendance-sheet-template/index.html"
+              class="product-title"
+              >employee attendance sheet template in Excel and PDF, fully
+              editable</a
+            >
+          </div>
+
+          <div class="product-card">
+            <a
+              href="../../products/mix/letterhead-template-in-word/index.html"
+              class="product-image-link"
+            >
+              <img
+                src="../../products/mix/images/letterhead template in Word and PDF format, fully editable.jpg"
+                alt="Albania Albanian Power Corporation"
+                class="product-image"
+              />
+            </a>
+            <a
+              href="../../products/mix/letterhead-template-in-word/index.html"
+              class="product-title"
+              >letterhead, fully editable</a
+            >
+          </div>
+        </div>
+        <div id="rara-top">
+          <svg
+            class="svg-inline--fa fa-angle-up fa-w-10"
+            aria-hidden="true"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+          >
+            <path
+              fill="currentColor"
+              d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"
+            ></path>
+          </svg>
+        </div>
+        <!-- HEADER -->
+      </div>
+    </div>
+    <footer id="zt-col" class="clearfix">
+      <div class="zt-wrapper">
+        <div id="zt-col-inner" class="footer-columns">
+          <!-- Левый блок: меню -->
+          <div id="zt-col1" class="footer-col">
+            <nav class="footer-nav">
+                  <ul>
+                    <li><a href="../../index_php/klub/">Historia</a></li>
+                    <li><a href="../../index_php/klub/stadion.html">Stadion</a></li>
+                    <li><a href="../../index_php/klub/zarzad.html">Zarząd</a></li>
+                    <li><a href="../../index_php/klub/sukcesy.html">Sukcesy</a></li>
+                    <li><a href="../../index_php/klub/kibice.html">Kibice</a></li>
+                  </ul>
+                </li>
+                <li><a href="../../index_php/druzyna.html">Drużyna</a></li>
+                <li><a href="../../index_php/rozgrywki.html">Rozgrywki</a></li>
+                <li><a href="../../index_php/galeria.html">Galeria</a></li>
+                <li><a href="../../index_php/napisz-do-nas.html">Kontakt</a></li>
+              </ul>
+            </nav>
+
+            <div class="realizacja">
+              <span>Realizacja:</span>
+              <a href="http://www.studioweb.net.pl/">
+                <img
+                  src="http://skswisla.com/images/studioweb.png"
+                  alt="studioweb"
+                  width="80"
+                  height="28"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Центр: быстрые ссылки -->
+          <div id="zt-col2" class="footer-col">
+            <ul class="category-module">
+              <li><a href="klub/historia.html">Historia</a></li>
+              <li><a href="klub/stadion.html">Stadion</a></li>
+              <li><a href="klub/zarzad.html">Zarząd</a></li>
+            </ul>
+          </div>
+
+          <!-- Правый блок: партнёры -->
+          <div id="zt-col3" class="footer-col">
+            <div class="partners">
+              <span>Partnerzy:</span>
+              <a href="http://www.jap.net.pl/" target="_blank" rel="noopener">
+                <img
+                  src="http://skswisla.com/images/japlogo.png"
+                  alt="JAP"
+                  width="90"
+                  height="45"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="zt-bottom" class="clearfix">
+        <div class="zt-wrapper">
+          <div id="zt-bottom-inner">
+            <div id="zt-copyright">
+              <div id="zt-copyright-inner">
+                Copyright (c) 2014 SKS WISŁA SANDOMIERZ - Wszelkie prawa
+                zastrzeżone
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const scrollBtn = document.getElementById("rara-top");
+
+    // Show button after scrolling down 100px
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        scrollBtn.classList.add("show");
+      } else {
+        scrollBtn.classList.remove("show");
+      }
+    });
+
+    // Smooth scroll to top on click
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+  </script>
+</html>

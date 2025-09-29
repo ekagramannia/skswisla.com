@@ -1,0 +1,350 @@
+:root {
+  --primary-color: #164272;
+  --primary-color-rgb: 22, 66, 114;
+  --primary-font: Poppins;
+  --secondary-font: Montserrat;
+  --secondary-color: #f78d3f;
+  --secondary-color-rgb: 247, 141, 63;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: Poppins;
+  font-size: 16px;
+  color: #666666;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#primary .post .entry-content h1,
+#primary .page .entry-content h1 {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+  color: #353d47;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#primary .post .entry-content h2,
+#primary .page .entry-content h2 {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  color: #353d47;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#primary .post .entry-content h3,
+#primary .page .entry-content h3 {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  color: #353d47;
+}
+
+h4 {
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#primary .post .entry-content h4,
+#primary .page .entry-content h4 {
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 700;
+  font-style: normal;
+  color: #353d47;
+}
+
+h5 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#primary .post .entry-content h5,
+#primary .page .entry-content h5 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  color: #353d47;
+}
+
+h6 {
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#primary .post .entry-content h6,
+#primary .page .entry-content h6 {
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal;
+  color: #353d47;
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-holder .container,
+  #site-navigation {
+    background: var(--primary-color);
+  }
+}
+
+p {
+  /*margin-bottom: 0.5em  !important;*/
+  text-align: justify !important;
+  line-height: normal !important;
+}
+
+.tnp-field {
+  font-family: Montserrat !important;
+}
+
+#tabs-container .tab-inner-wrapper .tab-anchor-wrapper a {
+  /*font-weight: bold;*/
+  color: #666666;
+  background-color: #eaf2fb;
+}
+
+.blog-section .grid .post .entry-footer {
+  display: none !important;
+}
+
+#primary .post .entry-footer .meta-info {
+  display: none !important;
+}
+
+.alignleft {
+  float: none !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .about {
+    display: none;
+  }
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  padding: 30px 20px;
+  font-family: "Trebuchet MS", Geneva, sans-serif;
+  font-size: 14px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-col {
+  flex: 1 1 30%;
+  min-width: 220px;
+}
+
+.footer-nav .menu,
+.category-module {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav .menu > li,
+.category-module li {
+  margin-bottom: 8px;
+}
+
+.footer-nav a,
+.category-module a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-nav a:hover,
+.category-module a:hover {
+  color: #f9be32;
+}
+
+.realizacja {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.partners {
+  text-align: right;
+}
+
+.partners span {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+footer img {
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+footer img:hover {
+  opacity: 1;
+}
+
+@font-face {
+  font-family: "GoogleFont";
+  src: url("css/font/OpenSans-VariableFont_wdth,wght") format("ttf");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+.custom_div_flex {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  text-align: center;
+}
+
+.custome_image_class {
+  width: 200px;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.custom_d_flex {
+  width: 75%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.productDescrription {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  margin-top: 2%;
+  justify-content: space-around;
+  font-family: "GoogleFont", sans-serif;
+}
+
+.generatedImage,
+.description {
+  width: 40%;
+  text-align: left;
+}
+
+.generatedImage img {
+  width: 90%;
+  border: solid 1px lightgray;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.description h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 0 0 0.5rem;
+  color: #1f1f1f;
+  font-family: "Google Sans", "Google Sans Text", Roboto, sans-serif;
+  font-weight: 400;
+}
+
+.description p,
+li {
+  margin: 0.25rem 0 0.75rem;
+  font-size: 1rem;
+  letter-spacing: 0.005rem;
+  line-height: 1.5rem;
+  word-wrap: break-word;
+  color: #1f1f1f;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.headbar {
+  height: 120px;
+}
+
+.description h2 {
+  color: #1f1f1f;
+  font-family: "Google Sans", "Google Sans Text", Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0rem;
+  line-height: 2rem;
+  margin: 2rem 0 0.5rem;
+}
+
+.description a {
+  color: #0b57d0;
+  text-decoration: none;
+}
+
+.headbar-title {
+  top: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .productDescrription {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .generatedImage,
+  .description {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .description {
+    margin-top: 7%;
+  }
+
+  .headbar {
+    height: auto;
+  }
+
+  .headbar-title {
+    top: -3px;
+  }
+}
