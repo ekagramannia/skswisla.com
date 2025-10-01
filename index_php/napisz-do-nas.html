@@ -12,6 +12,144 @@
         top: 50px !important;
       }
     </style>
+            <style>
+      #rara-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        background: blue; /* your theme color */
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 1000;
+      }
+
+      #rara-top.show {
+        opacity: 1;
+      }
+
+      #rara-top svg {
+        width: 24px;
+        height: 24px;
+      }
+      footer {
+        background: #111;
+        color: #fff;
+        padding: 30px 20px;
+        font-family: "Trebuchet MS", Geneva, sans-serif;
+        font-size: 14px;
+      }
+
+      .footer-columns {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .footer-col {
+        flex: 1 1 30%;
+        min-width: 220px;
+      }
+
+      .footer-nav .menu,
+      .category-module {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .footer-nav .menu > li,
+      .category-module li {
+        margin-bottom: 8px;
+      }
+
+      .footer-nav a,
+      .category-module a {
+        color: #ddd;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      .footer-nav a:hover,
+      .category-module a:hover {
+        color: #f9be32;
+      }
+
+      .realizacja {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .partners {
+        text-align: right;
+      }
+
+      .partners span {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      footer img {
+        opacity: 0.9;
+        transition: opacity 0.2s;
+      }
+
+      footer img:hover {
+        opacity: 1;
+      }
+      .product-card {
+        flex: 0 0 200px;
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 8px;
+        background: #fff;
+        transition: box-shadow 0.2s;
+      }
+
+      /* Изображение */
+      .product-image {
+        width: 100%;
+        border-radius: 4px;
+        display: block;
+        transition: box-shadow 0.3s ease;
+      }
+
+      /* Ховер тень */
+      .product-image-link:hover .product-image {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Заголовок под картинкой */
+      .product-title {
+        display: block;
+        font-size: 14px;
+        margin-top: 12px;
+        font-weight: bold;
+        font-family: Montserrat, sans-serif;
+        color: #333;
+        text-decoration: none;
+        cursor: pointer; /* курсор */
+      }
+
+      /* Эффект при наведении на заголовок */
+      .product-title:hover {
+        text-decoration: underline;
+        color: #000;
+      }
+    </style>
     <script
       src="//archive.org/includes/athena.js"
       type="text/javascript"
@@ -1319,203 +1457,91 @@
           </div>
         </div>
         <!-- END MAINBODY -->
-        <div id="zt-col" class="clearfix">
-          <div class="zt-wrapper">
-            <div id="zt-col-inner">
-              <div
-                id="zt-col1"
-                class="zt-user zt-box-left"
-                style="width: 33.3%"
-              >
-                <div class="zt-box-inside">
-                  <div class="moduletable">
-                    <div class="modulecontent">
-                      <ul class="menu">
-                        <li id="item-110" class="firstcurrent deeper parent">
-                          <a href="/">Aktualności</a>
-                          <ul>
-                            <li id="item-109">
-                              <a href="index_php/aktualnosci/archiwum.html"
-                                >Archiwum</a
-                              >
-                            </li>
-                          </ul>
-                        </li>
-                        <li id="item-102" class="parent">
-                          <a href="index_php/klub.html">Klub</a>
-                        </li>
-                        <li id="item-108" class="parent">
-                          <a href="index_php/druzyna.html">Drużyna</a>
-                        </li>
-                        <li id="item-172" class="parent">
-                          <a href="index_php/rozgrywki.html">Rozgrywki</a>
-                        </li>
-                        <li id="item-151">
-                          <a href="index_php/galeria.html">Galeria</a>
-                        </li>
-                        <li id="item-136" class="last active">
-                          <a href="index_php/napisz-do-nas.html">Kontakt</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="moduletable">
-                    <div class="modulecontent">
-                      <table style="width: 176px; height: 36px">
-                        <tbody>
-                          <tr>
-                            <td>
-                              <span style="color: #ffffff">Realizacja:</span
-                              >&nbsp;
-                            </td>
-                            <td>
-                              <span style="color: #ffffff"
-                                ><a href="http://www.studioweb.net.pl/"
-                                  ><img
-                                    src="http://skswisla.com//plugins/system/plg_ztools/plg_ztools/assets/images/loading.gif"
-                                    osrc="/images/studioweb.png"
-                                    alt="studioweb"
-                                    width="80"
-                                    height="28" /><noscript
-                                    ><img
-                                      src="images/studioweb.png"
-                                      alt="studioweb"
-                                      width="80"
-                                      height="28" /></noscript></a
-                              ></span>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="zt-col2"
-                class="zt-user zt-box-center"
-                style="width: 33.3%"
-              >
-                <div class="zt-box-inside">
-                  <div class="moduletable">
-                    <div class="modulecontent">
-                      <ul class="category-module">
-                        <li>
-                          <h4>
-                            <a
-                              class="mod-articles-category-title"
-                              href="index_php/194-porazka-na-starcie.html"
-                            >
-                              Porażka na starcie
-                            </a>
-                          </h4>
-                        </li>
-                        <li>
-                          <h4>
-                            <a
-                              class="mod-articles-category-title"
-                              href="index_php/193-kadra-wisly-na-sezon-2015-2016.html"
-                            >
-                              Kadra Wisły na sezon 2015/2016
-                            </a>
-                          </h4>
-                        </li>
-                        <li>
-                          <h4>
-                            <a
-                              class="mod-articles-category-title"
-                              href="index_php/192-zostan-czlonkiem-klubu.html"
-                            >
-                              Zostań Członkiem Klubu
-                            </a>
-                          </h4>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="zt-col3"
-                class="zt-user zt-box-right"
-                style="width: 33.3%"
-              >
-                <div class="zt-box-inside">
-                  <div class="moduletable">
-                    <div class="modulecontent">
-                      <p>
-                        <a
-                          title='Poligrafia i Reklama "JAP"'
-                          href="http://www.jap.net.pl/"
-                          target="_blank"
-                          ><img
-                            style="float: right"
-                            src="http://skswisla.com//plugins/system/plg_ztools/plg_ztools/assets/images/loading.gif"
-                            osrc="/images/japlogo.png"
-                            alt=""
-                            width="90"
-                            height="45" /><noscript
-                            ><img
-                              style="float: right"
-                              src="images/japlogo.png"
-                              alt=""
-                              width="90"
-                              height="45" /></noscript></a
-                        ><span
-                          style="
-                            font-family: 'trebuchet ms', geneva;
-                            font-size: 10pt;
-                          "
-                          >Partnerzy:</span
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <footer id="zt-col" class="clearfix">
+      <div class="zt-wrapper">
+        <div id="zt-col-inner" class="footer-columns">
+          <!-- Левый блок: меню -->
+          <div id="zt-col1" class="footer-col">
+            <nav class="footer-nav">
+              <ul class="menu">
+                <li><a href="../../index.html">Aktualności</a></li>
+                <li class="active parent">
+                  <a href="../../index_php/klub.html">Klub</a>
+                  <ul>
+                    <li><a href="../../index_php/klub/">Historia</a></li>
+                    <li>
+                      <a href="../../index_php/klub/stadion.html">Stadion</a>
+                    </li>
+                    <li>
+                      <a href="../../index_php/klub/zarzad.html">Zarząd</a>
+                    </li>
+                    <li>
+                      <a href="../../index_php/klub/sukcesy.html">Sukcesy</a>
+                    </li>
+                    <li>
+                      <a href="../../index_php/klub/kibice.html">Kibice</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="../../index_php/druzyna.html">Drużyna</a></li>
+                <li><a href="../../index_php/rozgrywki.html">Rozgrywki</a></li>
+                <li><a href="../../index_php/galeria.html">Galeria</a></li>
+                <li>
+                  <a href="../../index_php/napisz-do-nas.html">Kontakt</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="realizacja">
+              <span>Realizacja:</span>
+              <a href="http://www.studioweb.net.pl/">
+                <img
+                  src="http://skswisla.com/images/studioweb.png"
+                  alt="studioweb"
+                  width="80"
+                  height="28"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Центр: быстрые ссылки -->
+          <div id="zt-col2" class="footer-col">
+            <ul class="category-module">
+              <li><a href="klub/historia.html">Historia</a></li>
+              <li><a href="klub/stadion.html">Stadion</a></li>
+              <li><a href="klub/zarzad.html">Zarząd</a></li>
+            </ul>
+          </div>
+
+          <!-- Правый блок: партнёры -->
+          <div id="zt-col3" class="footer-col">
+            <div class="partners">
+              <span>Partnerzy:</span>
+              <a href="http://www.jap.net.pl/" target="_blank" rel="noopener">
+                <img
+                  src="http://skswisla.com/images/japlogo.png"
+                  alt="JAP"
+                  width="90"
+                  height="45"
+                />
+              </a>
             </div>
           </div>
         </div>
-        <div id="zt-bottom" class="clearfix">
-          <div class="zt-wrapper">
-            <div id="zt-bottom-inner">
-              <div id="zt-copyright">
-                <div id="zt-copyright-inner">
-                  Copyright (c) 2014 SKS WISŁA SANDOMIERZ - Wszelkie prawa
-                  zastrzeżone
-                </div>
+      </div>
+      <div id="zt-bottom" class="clearfix">
+        <div class="zt-wrapper">
+          <div id="zt-bottom-inner">
+            <div id="zt-copyright">
+              <div id="zt-copyright-inner">
+                Copyright (c) 2014 SKS WISŁA SANDOMIERZ - Wszelkie prawa
+                zastrzeżone
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="panel_cookie_dol" class="panel_cookie">
-      <div class="tresc">
-        <h4>Informacje o plikach cookie</h4>
-        <p>
-          Ta strona używa plików Cookies. Dowiedz się więcej o celu ich używania
-          i możliwości zmiany ustawień Cookies w przeglądarce.
-          <a href="index_php/component/content/article_id-14"
-            >Czytaj więcej...</a
-          >
-        </p>
-      </div>
-      <input
-        type="button"
-        id="ukryj"
-        value="Zamknij"
-        onclick="info_cookie();"
-      />
-    </div>
-    <center>
-      <font size="2"
-        >This is the free demo result. You can also download a
-        <a href="http://www.waybackmachinedownloader.com/en/"
-          >complete website</a
-        >
-        from <a href="https://archive.org">archive.org</a>.</font
-      >
-    </center>
+    </footer>
   </body>
 </html>
